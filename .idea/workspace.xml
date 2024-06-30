@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b25703c6-3970-48cd-8b8b-d74494fb7eca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ATMEmulator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ATM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cassette.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OperationLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+    <list default="true" id="b25703c6-3970-48cd-8b8b-d74494fb7eca" name="Changes" comment="classes and first func">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ATM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ATM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cassette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cassette.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OperationLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OperationLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "eleneaa"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/eleneaa/JavaATMEmulator",
+    "accountId": "aa85e59f-9a84-4f2e-b0c8-6f246e42afd8"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 3
 }]]></component>
@@ -60,7 +66,20 @@
       <option name="presentableId" value="Default" />
       <updated>1719735381251</updated>
     </task>
+    <task id="LOCAL-00001" summary="classes and first func">
+      <option name="closed" value="true" />
+      <created>1719739331950</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1719739331950</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="classes and first func" />
+    <option name="LAST_COMMIT_MESSAGE" value="classes and first func" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

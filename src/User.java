@@ -1,6 +1,7 @@
 public class User {
     String username;
     String password;
+    int dailyLimit = 50000;
 
     //Конструктор
     public User(String username, String password){
@@ -40,6 +41,7 @@ public class User {
         }
     }
 
+    //Метод для выхода пользователя
     public void Logout(){
         this.username = null;
         this.password = null;
