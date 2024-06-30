@@ -1,17 +1,21 @@
+import Exeption.DailyLimitExceededException;
+import Exeption.InsufficientFundsException;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.time.LocalDate;
+import java.util.stream.IntStream;
 
 class ATM {
-    private Cassette cassette = new Cassette(500, 500, 500);
-    private OperationLog operationLog  = new OperationLog();
+    private int count10Cassets;
+    private int count50Cassets;
+    private int count100Cassets;
+    private Cassette cassette = new Cassette(count10Cassets, count50Cassets, count100Cassets);
+    private OperationLog operationLog = new OperationLog();
     private List<User> users = new ArrayList<>();
     private User currentUser;
-    int count10Cassets;
-    int count50Cassets;
-    int count100Cassets;
 
     public ATM(int count10Cassets, int count50Cassets, int count100Cassets) {
         this.count10Cassets = count10Cassets;
@@ -28,7 +32,7 @@ class ATM {
         for (int denomination : denominations) {
             int count = remainingAmount / denomination;
             if (count > 0) {
-                remainingAmount -= count*denomination;
+                remainingAmount -= count * denomination;
                 cassette.refillCassette(denomination, count);
                 operationLog.addEntryCassetteOperation(denomination, count);
             }
@@ -85,7 +89,7 @@ class ATM {
     }
 
     public int getBalance() {
-        return cassettes.values().stream().mapToInt(Cassette::getTotal).sum();
+        return IntStream.of(cassette.getCasseteStatys()).sum();
     }
+}
 
-    public

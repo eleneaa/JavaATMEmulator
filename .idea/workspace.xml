@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b25703c6-3970-48cd-8b8b-d74494fb7eca" name="Changes" comment="classes and first func">
+    <list default="true" id="b25703c6-3970-48cd-8b8b-d74494fb7eca" name="Changes" comment="ATM class">
+      <change afterPath="$PROJECT_DIR$/src/Exeption/InsufficientFundsException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ATM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ATM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cassette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cassette.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OperationLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OperationLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,12 +72,21 @@
       <option name="project" value="LOCAL" />
       <updated>1719739331950</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ATM class">
+      <option name="closed" value="true" />
+      <created>1719750693190</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719750693190</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="classes and first func" />
-    <option name="LAST_COMMIT_MESSAGE" value="classes and first func" />
+    <MESSAGE value="ATM class" />
+    <option name="LAST_COMMIT_MESSAGE" value="ATM class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
