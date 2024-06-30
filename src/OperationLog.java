@@ -5,6 +5,10 @@ import java.util.List;
 public class OperationLog {
     private List<String> logEntries;
 
+    public OperationLog() {
+        logEntries = new ArrayList<>();
+    }
+
     // Метод для добавления новой записи об операциях пользователя в журнал
     public void addEntryUserOperation(User user, String type, int amount, String exeption) {
         String userOperationEntry = String.format("time: %s; user: %s; type: %s; amount: %d; exeption: %s",

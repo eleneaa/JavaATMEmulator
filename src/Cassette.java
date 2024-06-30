@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 public class Cassette {
     int count10;
     int count50;
@@ -11,8 +13,11 @@ public class Cassette {
     }
 
     //Метод для получения количества банкнот каждого номинала
-    public int[] getCasseteStatys(){
-        int[] cassetteStatus = new int[] {count10, count50, count100};
+    public HashMap<Integer, Integer> getCasseteStatys(){
+        HashMap <Integer, Integer> cassetteStatus = new HashMap<>();
+        cassetteStatus.put(10, count10);
+        cassetteStatus.put(50,count50);
+        cassetteStatus.put(100,count100);
         return cassetteStatus;
     }
 
