@@ -1,6 +1,7 @@
 import Exeption.DailyLimitExceededException;
 import Exeption.InsufficientFundsException;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -31,28 +32,38 @@ public class Main {
             }
         }
 
-        System.out.println("You can choose the appropriate operation.\n" +
-                "Write down the operation number.\n" +
-                "1) Withdraw money\n" +
-                "2) Deposit money\n" +
-                "3) Logout");
+        while (true){
+            System.out.println("You can choose the appropriate operation.\n" +
+                    "Write down the operation number.\n" +
+                    "1) Withdraw money\n" +
+                    "2) Deposit money\n" +
+                    "3) View cassete status\n" +
+                    "4) View operation log\n" +
+                    "3) Logout");
 
-        int operation = scanner.nextInt();
-
-        switch (operation){
-            case 1:
+            int operation = scanner.nextInt();
+            if (operation == 1){
                 System.out.println("Enter the amount:");
                 amount = scanner.nextInt();
                 atm.withdraw(amount, user);
-                break;
-            case 2:
+                operation = scanner.nextInt();
+            } else if (operation == 2) {
                 System.out.println("Enter the amount:");
                 amount = scanner.nextInt();
                 atm.deposit(amount);
-                break;
-            case 3:
+            } else if (operation == 3) {
+                System.out.println(atm.cassette.getCasseteStatus().values());
+            } else if (operation == 4) {
+                for (String log: atm.operationLog.getLogEntries()) {
+                    System.out.println(log);
+                }
+            } else if (operation == 5) {
                 user.Logout();
                 break;
+            } else {
+                throw new IllegalStateException("Unexpected value: " + operation);
+            }
         }
+
     }
 }

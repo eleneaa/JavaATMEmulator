@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b25703c6-3970-48cd-8b8b-d74494fb7eca" name="Changes" comment="custom exeption">
+    <list default="true" id="b25703c6-3970-48cd-8b8b-d74494fb7eca" name="Changes" comment="main class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ATM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ATM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cassette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cassette.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OperationLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OperationLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,14 +109,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719751471809</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="main class">
+      <option name="closed" value="true" />
+      <created>1719756810669</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719756810669</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="classes and first func" />
     <MESSAGE value="ATM class" />
     <MESSAGE value="custom exeption" />
-    <option name="LAST_COMMIT_MESSAGE" value="custom exeption" />
+    <MESSAGE value="main class" />
+    <option name="LAST_COMMIT_MESSAGE" value="main class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

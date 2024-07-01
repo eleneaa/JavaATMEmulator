@@ -13,7 +13,7 @@ public class Cassette {
     }
 
     //Метод для получения количества банкнот каждого номинала
-    public HashMap<Integer, Integer> getCasseteStatys(){
+    public HashMap<Integer, Integer> getCasseteStatus(){
         HashMap <Integer, Integer> cassetteStatus = new HashMap<>();
         cassetteStatus.put(10, count10);
         cassetteStatus.put(50,count50);

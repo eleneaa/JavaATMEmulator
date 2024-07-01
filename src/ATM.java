@@ -1,23 +1,20 @@
 import Exeption.DailyLimitExceededException;
 import Exeption.InsufficientFundsException;
-
 import java.util.*;
-import java.time.LocalDate;
-import java.util.stream.IntStream;
 
 class ATM {
-    private int count10Cassets;
-    private int count50Cassets;
-    private int count100Cassets;
-    private Cassette cassette = new Cassette(count10Cassets, count50Cassets, count100Cassets);
-    private OperationLog operationLog = new OperationLog();
-    User currentUser;
-
     public ATM(int count10Cassets, int count50Cassets, int count100Cassets) {
         this.count10Cassets = count10Cassets;
         this.count50Cassets = count50Cassets;
         this.count100Cassets = count100Cassets;
     }
+
+    private int count10Cassets;
+    private int count50Cassets;
+    private int count100Cassets;
+    Cassette cassette = new Cassette(count10Cassets, count50Cassets, count100Cassets);
+    OperationLog operationLog = new OperationLog();
+    User currentUser;
 
     public void deposit(int amount) throws IllegalArgumentException {
         if (amount <= 0 || amount % 10 != 0) {
@@ -87,13 +84,12 @@ class ATM {
     public int getBalance() {
         int balance = 0;
         int idx = 0;
-        Set<Integer> keys = cassette.getCasseteStatys().keySet();
-        ArrayList<Integer> values = new ArrayList<>(cassette.getCasseteStatys().values());
+        Set<Integer> keys = cassette.getCasseteStatus().keySet();
+        ArrayList<Integer> values = new ArrayList<>(cassette.getCasseteStatus().values());
         for ( int key:keys ){
             balance += values.get(idx)*key;
             idx++;
         }
-        System.out.println(balance);
         return balance;
     }
 }
