@@ -1,3 +1,5 @@
+import java.util.regex.Pattern;
+
 public class User {
     String username;
     String password;
@@ -17,9 +19,8 @@ public class User {
 
     //Метод для проверки пароля пользователя
     private static boolean checkPassword(String password){
-        boolean valid = (password != null); // && password.matches
-                //("^(?=.*[0-9])(?=.*[az])(?=.*[AZ])(?=.*[@#$%^&-+=( )])(?=\\\\S+$).{8,20}$");
-        return valid;
+        String regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,20}$";
+        return Pattern.matches(regex, password);
     }
 
     //Метод для входа пользователя

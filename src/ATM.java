@@ -3,16 +3,11 @@ import Exeption.InsufficientFundsException;
 import java.util.*;
 
 class ATM {
-    public ATM(int count10Cassets, int count50Cassets, int count100Cassets) {
-        this.count10Cassets = count10Cassets;
-        this.count50Cassets = count50Cassets;
-        this.count100Cassets = count100Cassets;
+    public ATM(Cassette cassette) {
+        this.cassette = cassette;
     }
 
-    private int count10Cassets;
-    private int count50Cassets;
-    private int count100Cassets;
-    Cassette cassette = new Cassette(count10Cassets, count50Cassets, count100Cassets);
+    Cassette cassette;
     OperationLog operationLog = new OperationLog();
     User currentUser;
 
@@ -27,7 +22,6 @@ class ATM {
             if (count > 0) {
                 remainingAmount -= count * denomination;
                 cassette.refillCassette(denomination, count);
-                operationLog.addEntryCassetteOperation(denomination, count);
             }
         }
     }

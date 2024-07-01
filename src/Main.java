@@ -2,11 +2,13 @@ import Exeption.DailyLimitExceededException;
 import Exeption.InsufficientFundsException;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws InsufficientFundsException, DailyLimitExceededException {
-        ATM atm = new ATM(500, 500, 500);
+        ATM atm = new ATM(new Cassette(500, 500, 500));
         User user = new User(null, null);
         int amount;
         Scanner scanner = new Scanner(System.in);
@@ -52,7 +54,12 @@ public class Main {
                 amount = scanner.nextInt();
                 atm.deposit(amount);
             } else if (operation == 3) {
-                System.out.println(atm.cassette.getCasseteStatus().values());
+                HashMap <Integer, Integer> cassetteStatus = atm.cassette.getCasseteStatus();
+                for (Map.Entry<Integer, Integer> entry : cassetteStatus.entrySet()) {
+                    Integer key = entry.getKey();
+                    Integer value = entry.getValue();
+                    System.out.println("denomination: " + key + ", count: " + value);
+                }
             } else if (operation == 4) {
                 for (String log: atm.operationLog.getLogEntries()) {
                     System.out.println(log);
